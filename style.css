@@ -1,3 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Oxygen&display=swap');
+
 body {
   background-color: #C1D7C8;
+  font-family: 'Outfit', sans-serif;
+  margin: 10px;
+  padding: 20px;
+}
+
+h1 {
+  color: #38023B;
+}
+
+h2 {
+  color: #820933;
+}
+
+.title {
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1vmin;
+  grid-row-gap: 1vmin;
+  padding: 1vmin;
+  border: solid white 5px;
+  background-color: #87C0AE;
+}
+
+.contentItem {
+  text-align: center;
+  color: white;
+  border: solid white 3px;
+}
+
+.portrait {
+  height: 200px;
+  padding-top: 20px;
+}
+
+h3 {
+  margin: 5px;
+  font-weight: bold;
+  text-decoration: underline dashed;
+  font-size: 24px;
+}
+
+h4 {
+  margin: 5px;
+  font-size: 16px;
 }

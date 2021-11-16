@@ -95,13 +95,13 @@ function createElement(incomingJSON) {
   // create and add h4 (crafting_specialty)
   let newCraftingElement = document.createElement("H4");
   newCraftingElement.classList.add("craftingSpecialty");
-  newCraftingElement.innerText = incomingJSON["crafting_specialty"];
+  newCraftingElement.innerText = "Craft: " + incomingJSON["crafting_specialty"];
   newContentElement.appendChild(newCraftingElement);
 
   // create and add h4 (favorite_food)
   let newFoodElement = document.createElement("H4");
   newFoodElement.classList.add("favoriteFood");
-  newFoodElement.innerText = incomingJSON["favorite_food"];
+  newFoodElement.innerText = "Favorite Food: " + incomingJSON["favorite_food"];
   newContentElement.appendChild(newFoodElement);
 
   contentGridElement.appendChild(newContentElement);
