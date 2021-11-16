@@ -68,6 +68,7 @@ let jsonDatabase = [
 
 ];
 
+// used code from class example (11/9) as a guide for all code below this point
 for (var i = 0; i < jsonDatabase.length; i++) {
   createElement(jsonDatabase[i]);
 }
@@ -84,21 +85,21 @@ function createElement(incomingJSON) {
   image.src = incomingJSON["picture_url"];
   newContentElement.appendChild(image);
 
-  // create headline h3, set class, set content
+  // create name h3, set class, set content
   let newContentHeading = document.createElement("H3");
   newContentHeading.classList.add("contentName");
   newContentHeading.innerText = incomingJSON["name"];
 
-  // add headline to item
+  // add name to item
   newContentElement.appendChild(newContentHeading);
 
-  // create and add h4 (crafting_specialty)
+  // create and add h4 (craft)
   let newCraftingElement = document.createElement("H4");
   newCraftingElement.classList.add("craftingSpecialty");
   newCraftingElement.innerText = "Craft: " + incomingJSON["crafting_specialty"];
   newContentElement.appendChild(newCraftingElement);
 
-  // create and add h4 (favorite_food)
+  // create and add h4 (favorite food)
   let newFoodElement = document.createElement("H4");
   newFoodElement.classList.add("favoriteFood");
   newFoodElement.innerText = "Favorite Food: " + incomingJSON["favorite_food"];
